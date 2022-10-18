@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#03A9F4"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Fake Call App"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/def_contact"
+        android:layout_width="165dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="500dp"
+        android:background="#FFFFFF"
+        android:foregroundGravity="center"
+        android:src="@drawable/contact"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/sch"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:fontFamily="@font/acme"
+        android:text="Schedule"
+        android:textStyle="bold"
+        app:backgroundTint="#03A9F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/def_contact" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="36dp"
+        android:text="Caller Info"
+        android:textStyle="bold"
+        app:backgroundTint="#03A9F4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/def_contact" />
+
+    <Button
+        android:id="@+id/trust"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="Trusted"
+        android:textStyle="bold"
+        app:backgroundTint="#03A9F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sch" />
+
+    <Button
+        android:id="@+id/callnow"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/acme"
+        android:text="Call Now"
+        android:textStyle="bold"
+        app:backgroundTint="#03A9F4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b1" />
+
+    <Button
+        android:id="@+id/sosbut"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="SOS ALERT"
+        android:textSize="18sp"
+        app:backgroundTint="#FF9800"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/callnow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
